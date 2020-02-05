@@ -8,10 +8,18 @@
  *   13 times 3 is 39
  *   13 times 4 is 52
  */
+//I couldnt figure out how to print out all the multiples under the parameter
+//Im assuming I need an array to store the multiples as they run through
+//I only got it to print the input given.
 function timesTable13(n) {
-  // This is your job. :)
+  for (i = 1; i <= 1000; i++) {
+    if (n % 13 === 0) {
+      console.log('13 times', n, 'is', 13 * n)
+    }
+  }
 
-  // Use console.log to print out statements like "13 times 5 is 65"
+  console.log('13 times', n, 'is', 13 * n) // Use console.log to print out statements like "13 times 5 is 65"
+
 }
 
 if (require.main === module) {
